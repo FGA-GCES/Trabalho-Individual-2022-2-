@@ -73,8 +73,8 @@ Documentação (sphinx)
 A avaliação do trabalho será feita à partir da correta implementação de cada etapa. A avaliação será feita de maneira **quantitativa** (se foi realizado a implementação + documentação), e **qualitativa** (como foi implementado, entendimento dos conceitos na prática, complexidade da solução). Para isso, faça os **commits atômicos, bem documentados, completos** a fim de facilitar o entendimento e avaliação do seu trabalho. Lembrando o trabalho é individual.
 
 **Observações**: 
-1. A data final de entrega do trabalho é o dia 04/09/2022;
-2. O trabalho deve ser desenvolvido em um **repositório PESSOAL e PRIVADO** que deverá ser tornado público somente após a data de entrega do trabalho (no dia 20/01/2023);
+1. A data final de entrega do trabalho é o dia 28/01/2023;
+2. O trabalho deve ser desenvolvido em um **repositório PESSOAL e PRIVADO** que deverá ser tornado público somente após a data de entrega do trabalho (no dia 28/01/2023);
 3. Cada etapa do trabalho deverá ser entregue em commits progressivos (pendendo ser mais de um commit por etapa);
 4. Os **commits devem estar espaçados em dias ao longo do desenvolvimento do trabalho**. Commits feitos todos juntos na data de entrega não serão descontados da nota final.
 
@@ -98,7 +98,7 @@ Alguns trabalhos de trabalhos anteriores:
 
 
 
-### Instaling Requirements
+### Requisitos de instação
 
 ```
 python -m venv env
@@ -106,13 +106,13 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-### Running
+### Rodando a aplicação
 
 ```
 python src/main.py
 ```
 
-### Testing
+### Testando
 
 ```
 pytest --cov
@@ -120,14 +120,16 @@ pytest --cov
 
 ### Metabase
 
-The metabase will help us visualize and monitor data processing, feature engineering and model monitoring, accompanying us throughout the cycle.
+O metabase ajuda a visualizar e a modelar o processamento dos dados, a engenharia de features e monitoramento do modelo.
 
-| Keywords  | Description |
+
+
+| Keywords  | Descrição |
 |-----------|-------------|
-|   CSV     | A CSV file is a plain text file that stores table and spreadsheet information. CSV files can be easily imported and exported using programs that store data in tables.|
-| Collection| A collection is a grouping of MongoDB documents. Documents within a collection can have different fields. A collection is the equivalent of a table in a relational database system.|
-|  Database | A database stores one or more collections of documents.|
-| Mongo| It is a NoSQL database developed by MongoDB Inc. MongoDB database is built to store a huge amount of data and also perform fast.|
+|   CSV     | Um arquivo CSV é um arquivo de texto simples que armazena informações de tabelas e planilhas. Os arquivos CSV podem ser facilmente importados e exportados usando programas que armazenam dados em tabelas.|
+| Collection (coleção)| Uma coleção é um agrupamento de documentos do MongoDB. Os documentos dentro de uma coleção podem ter campos diferentes. Uma coleção é o equivalente a uma tabela em um sistema de banco de dados relacional.|
+|  Database | Um banco de dados armazena uma ou mais coleções de documentos.|
+| Mongo| É um banco de dados NoSQL desenvolvido pela MongoDB Inc. O banco de dados MongoDB foi criado para armazenar uma grande quantidade de dados e também executar rapidamente.|
 
 
 
@@ -136,10 +138,10 @@ The metabase will help us visualize and monitor data processing, feature enginee
 - step 1: Open localhost:3000
 - step 2: Click Admin setting
 - step 3: Click Database
-- step 4: Add database authentication data
+- step 4: Adicione os dados de autenticação de  banco de dados 
 
 
-**Exemple mongo connect metabase**
+**Exemplo da conexão mongo  metabase**
 |  metabase  | credential  |
 |------------|-------------|
 |    host    |  mongo  |
