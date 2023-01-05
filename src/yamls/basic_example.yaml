@@ -1,0 +1,43 @@
+dag:
+  id: basic_example
+  description: DAG de teste
+  data_path:
+    - 'data/data_example.csv'
+    - 'data/data_example2.csv'
+  output_folder: 'output'
+
+  feature_engineering:
+    - input:
+        columns:
+          - foo_1: ['NUMBER', 'ADDRESS', 'ZIPCODE']
+          - foo_2: 'NUMBER'
+        features:
+          word_embedding:
+            data_lang: 'es'
+            foo_1:
+              dimensions: 23
+
+    - input:
+        columns:
+          - foo_2: 'NUMBER'
+        features:
+          word_embedding: 'off'
+          keyboard_smash:
+            ksmash_sequence_vowels: 'off'
+
+  model:
+    random_forest:
+      - input:
+          type: 'address'
+          columns:
+            - 'foo_1'
+          thresholds:
+            test_size: 0.3
+            n_estimators: 100
+            keyboard_smash:
+              foo_1:
+                ksmash_sequence_vowels: 1.00
+                ksmash_sequence_consonants: 1.999
+                ksmash_sequence_special_characters: 2.2499
+                ksmash_numbers: 2.9
+                ksmash_char_frequence: 2.78
