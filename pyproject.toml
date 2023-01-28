@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "trabalho-gces-eurico"
+version = "1"
+description = "trabalho-gces-eurico-2023"
+authors = ["EuricoAbreu <euricoabreuneto@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "trabalho_gces_eurico"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
