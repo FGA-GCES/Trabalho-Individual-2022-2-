@@ -1,0 +1,114 @@
+# Doxyfile 1.8.20
+
+# This file describes the settings to be used by the documentation system
+
+# doxygen (www.doxygen.org) for a project
+
+# All text after a hash (#) is considered a comment and will be ignored
+
+# The format is:
+
+# KEY = VALUE
+
+# This file is divided into several sections, each marked by a `#`
+
+# characters at the beginning of the line. To enable a section, remove the
+
+# hash character and adjust the value as needed.
+
+#---------------------------------------------------------------------------
+
+# Project related configuration options
+
+#---------------------------------------------------------------------------
+
+# The PROJECT_NAME tag is a single word (or a sequence of words surrounded
+
+# by quotes) that should identify the project.
+
+PROJECT_NAME = "MyLibrary"
+
+# The PROJECT_NUMBER tag can be used to enter a project or revision number.
+
+PROJECT_NUMBER = "1.0"
+
+# The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute)
+
+# base path where the generated documentation will be put.
+
+OUTPUT_DIRECTORY = "docs"
+
+# The INPUT tag is used to specify the files and directories that should be
+
+# processed by doxygen. The paths are relative to the directory from which
+
+# doxygen is run.
+
+INPUT = "src"
+
+#---------------------------------------------------------------------------
+
+# Build related configuration options
+
+#---------------------------------------------------------------------------
+
+# The EXTRACT_ALL tag tells doxygen to extract all entities from the code
+
+# and not just the public ones.
+
+EXTRACT_ALL = YES
+
+# The EXTRACT_PRIVATE tag tells doxygen to show the private members of a class
+
+# in the documentation.
+
+EXTRACT_PRIVATE = YES
+
+# The EXTRACT_STATIC tag tells doxygen to show the static members of a class
+
+# in the documentation.
+
+EXTRACT_STATIC = YES
+
+# The EXTRACT_LOCAL_CLASSES tag tells doxygen to show the classes (and structs)
+
+# defined locally in source files in the documentation.
+
+EXTRACT_LOCAL_CLASSES = YES
+
+# The HIDE_UNDOC_MEMBERS tag can be used to hide members of a class that are
+
+# undocumented.
+
+HIDE_UNDOC_MEMBERS = YES
+
+# The HIDE_UNDOC_CLASSES tag can be used to hide class that are undocumented.
+
+HIDE_UNDOC_CLASSES = YES
+
+# The HIDE_FRIEND_COMPOUNDS tag can be used to hide friend classes that are
+
+# documented.
+
+HIDE_FRIEND_COMPOUNDS = YES
+
+#---------------------------------------------------------------------------
+
+# Configuration options related to the input files
+
+#---------------------------------------------------------------------------
+
+# The FILE_PATTERNS tag can be used to specify one or more wildcard pattern
+
+# (like _.cpp and _.h) to filter out the source-files in the file system.
+
+FILE_PATTERNS = _.c \
+ _.cc \
+ _.cxx \
+ _.cpp \
+ _.c++ \
+ _.java \
+ _.ii \
+ _.ixx \
+ _.ipp \
+ _.
