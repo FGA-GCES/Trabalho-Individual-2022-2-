@@ -51,3 +51,5 @@ services:
       - METABASE_PASSWORD=lappis
 volumes:
   mongodb_data:
+
+# link da biblioteca publicada:  https://pypi.org/project/trabalho-individual-2022-2-kayro-cesar/0.0.1/
